@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>TEST</title>
+</head>
+<body>
+    <div class="contain1">
+        <div class="altresim">
+            <div class="resimgelicek">
+                <asp:Image ID="Image1" runat="server" Height="300px" ImageUrl='<%# Eval("RESİM", "~/resimler/{0}") %>' Width="400px" />
+            </div>
+      
+
+
+            <div class="yazilar">
+                <asp:HyperLink runat="server">HyperLink</asp:HyperLink>
+                <h1><%#Eval("baslik") %></h1>
+                <p1><%#Eval("aciklama") %></p1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<style>
+    .contain1{
+        position:absolute;
+        width:80%;
+        margin-top:26%;
+        margin-left:15%;
+    }
+    .altresim{
+
+        height: 300px;
+        width: 92%;
+    }
+    .yazilar{
+        margin-top: -300px;
+        margin-left: 40%;
+        color: white;
+
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    h1{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+        font-size: 50px;
+        color: white;
+        margin-top: -10px;
+    }
+    .resimgelicek {
+        background-image: url('<%# Eval("RESİM", "~/resimler/{0}") %>');
+        width: 500px;
+        height: 100%;
+    }
+</style>

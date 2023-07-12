@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div class="container">
+        <div class='shopping-card'>
+            <div class="air-max-react-shoe-container">
+                <asp:Image ID="Image1" runat="server" ImageUrl='<%# Eval("Resim1", "~/UrunResim/{0}") %>' style="height:225px;"/>
+
+                <!--<img src="\Resimler\pexels-nic-wood-6432056.jpg" height="200" width="264" />-->
+                <!--<p class='trending-badge'>Trending</p>-->
+            </div>
+            <h4 class="shoe-heading">
+                                        <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl='<%# Eval("ID", "~/Sayfalar/Alısveris/asp/urunDetay.aspx?urun={0}") %>'>sdfads</asp:HyperLink>
+
+            </h4>
+            <div class='price-bag-container'>
+                <p class='price'>  <%#Eval("BirimFiyati") %></p>
+                
+                <div class="bag-icon"></div>
+            </div>
+        </div>
+    </div>
+    <h1><%#Eval("ÜrünAdi") %></h1>
+    <h1><%#Eval("Kategori") %></h1>
+    <!--<%#Eval("BirimFiyati") %>
+    <%#Eval("UrunAciklamasi") %>-->
+
+
+
+    <style>
+
+
+        body {
+            margin: 0px;
+        }
+
+        .container {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            padding: 0;
+            margin: 0;
+            width: auto;
+            background-color: gray;
+        }
+
+        .bg-container {
+            /*            background-color: green;*/
+            width: 80%;
+            min-height: 100vh;
+            float: right;
+        }
+
+        tr {
+            float: left;
+        }
+
+        .heading {
+            color: white;
+            font-family: "Open Sans";
+        }
+
+
+        .description {
+            color: white;
+            font-family: "Open Sans";
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .shopping-card {
+            width: 275px;
+            height: 370px;
+            /*            background-color: grey;*/
+            padding: 5px;
+            margin: 0.9rem;
+            border-radius: 16px;
+            font-family: "Open Sans";
+            font-size: 16px;
+            float: left;
+            border-style: solid;
+            border-width: 0.1px;
+        }
+
+
+
+
+        .air-max-react-shoe-container {
+            height: 200px;
+            margin-bottom: 1rem;
+            background-size: cover;
+            border-radius: 16px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+
+            .air-max-react-shoe-container img {
+                border-radius: 10px;
+            }
+
+                .air-max-react-shoe-container img:hover {
+                }
+
+
+        .air-max-shoe-container {
+            height: 200px;
+            background-image: url('\Resimler\pexels-nic-wood-6432056.jpg');
+            background-size: cover;
+            border-radius: 16px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+
+        .shoe-description: {
+            font-size: 16px;
+            color: #594d6d;
+        }
+
+        .trending-badge {
+            background: #f7941d;
+            color: white;
+            padding: 4px 15px;
+            font-size: 14px;
+            border-radius: 16px;
+        }
+
+        .show-heading {
+        }
+
+        .bag-icon {
+            background: #659ebc;
+            width: 56px;
+            height: 56px;
+            border-radius: 100%;
+        }
+
+        .price {
+            font-weight: 700;
+        }
+
+        .price-bag-container {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</body>
+</html>

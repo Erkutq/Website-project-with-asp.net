@@ -1,0 +1,60 @@
+﻿
+<body>
+    <div class="contain1">
+
+        <img src="/Resimler/pexels-nic-wood-6432056.jpg" alt="" height="400" width="520">
+
+
+        <div class="yazi">
+
+
+            <h4>Hakkımızda</h4>
+            <hr style="width:100px;" />
+            <h1><%#Eval("baslik") %></h1>
+            <p><%#Eval("aciklama") %></p>
+        </div>
+    </div>
+
+    <style>
+    .hakkizda {
+    background-color: rgb(0, 0, 0);
+    width: 250px;
+    height: 250px;
+    border-radius: 360px;
+    float: right;
+    }
+
+    .contain1 {
+    display: flex;
+    background-color: white;
+    width: 1200px;
+    box-shadow: 10px 10px 10px rgb(255, 255, 255);
+   
+    margin-left: 150px;
+    position:relative;
+    top:400px;
+
+    }
+
+    .yazi {
+    width: 100%;
+    margin-left: 15px;
+    }
+
+    h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    color: black;
+    }
+
+    p {
+    margin-top: 20px;
+    width: auto;
+    color: black;
+    display:inline-block;
+    }
+    h4 {
+    color: black;
+    }
+    </style>
+</body>

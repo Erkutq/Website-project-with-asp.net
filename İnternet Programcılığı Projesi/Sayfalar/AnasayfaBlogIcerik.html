@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div class="contain">
+
+        <ul>
+            <li>
+                <asp:Image ID="Image1" runat="server" style="height:100%; width:100%;" ImageUrl='<%# Eval("Resim", "~/blogResimler/{0}") %>' />
+                <h3>
+                    <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl='<%# Eval("ID", "~/Sayfalar/blogIcerik.aspx?urunno={0}") %>'><%#Eval("Baslik") %></asp:HyperLink>
+                    
+                </h3>
+                <p>'<%# Eval("Ozet") %>'</p>
+
+            </li>
+        </ul>
+    </div>
+<style>
+    .contain{
+        margin-top:450px;
+        
+
+    }
+    ul {
+        display: flex;
+        list-style: none;
+        margin-left: 110px;
+        height:500px;
+        background-color:dimgray;
+    }
+
+    li {
+        float: left;
+        margin-left: 5px;
+        background-color: white;
+        height: 250px;
+        width:350px;
+    }
+    tr{
+        display:inline-block;
+
+    }
+</style>
+</body>
+</html>

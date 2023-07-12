@@ -1,0 +1,127 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="İnternet_Programcılığı_Projesi.Master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background-color:white;">
+    
+    <nav class="navMenu">
+        <h1 style="color:black; margin-left:-350px;">\|/<strong style="color:teal;"></strong></h1>
+      <a href="/Sayfalar/Anasayfa.aspx">Anasayfa</a>
+      <a href="/Sayfalar/BlogSayfası.aspx">Blog</a>
+      <a href="/Sayfalar/Alısveris/asp/Urunler.aspx">Mağaza</a>
+      <a href="/Sayfalar/UyeKayit/KullaniciGiris.aspx">Giriş Yap</a>
+      <a href="/Sayfalar/Alısveris/asp/Sepet.aspx">Sepet</a>
+      <a href="/Sayfalar/AdminGiris.aspx">Yönetim</a>
+
+      
+    </nav>
+  
+
+    <%--<nav class="navMenu">
+        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Sayfalar/Anasayfa.aspx">Anasayfa</asp:HyperLink>
+        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Sayfalar/BlogSayfası.aspx">Blog</asp:HyperLink>
+        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Yonetim/BlogEkle.aspx">Yonetim</asp:HyperLink>
+        <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Sayfalar/Anasayfa.aspx">Hakkımızda</asp:HyperLink>
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Sayfalar/Alısveris/asp/Urunler.aspx">Mağza<img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/shopping-cart--v1.png" alt="shopping-cart--v1"/></asp:HyperLink>
+<%--         <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/Sayfalar/Alısveris/asp/Urunler.aspx">Mağza<img width="30" height="30"/>Ürün</asp:HyperLink>--%>
+<%--                <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/Sayfalar/Alısveris/asp/Urunler.aspx">Mağza<img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/shopping-cart--v1.png" alt="shopping-cart--v1"/></asp:HyperLink>--%>
+        <%--<asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/Sayfalar/Alısveris/asp/Sepet.aspx">sepet/></asp:HyperLink>
+                <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/Sayfalar/UyeKayit/KullaniciGiris.aspx">Giriş Yap/></asp:HyperLink>--%>
+
+
+
+
+<%--    </nav>--%>
+
+    <style>
+       @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #272727;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navMenu {
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.navMenu a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: initial;
+  width: 130px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin-left:34px;
+}
+
+.navMenu a:hover {
+  color: #fddb3a;
+}
+
+
+
+.navMenu a:nth-child(1):hover ~ .dot {
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(2):hover ~ .dot {
+  -webkit-transform: translateX(110px);
+  transform: translateX(110px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(3):hover ~ .dot {
+  -webkit-transform: translateX(200px);
+  transform: translateX(200px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(4):hover ~ .dot {
+  -webkit-transform: translateX(285px);
+  transform: translateX(285px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+    </style>
+    <div class="Container">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <style>
+        .Container {
+            margin-top: 150px;
+        }
+    </style>
+
+</body>
+</html>
